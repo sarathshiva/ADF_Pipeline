@@ -1,0 +1,9 @@
+{
+	"name": "DFProsarath",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6ede6ba0-07e1-44c8-af16-9155fbf555f6",
+		"tenantId": "055d6e1c-52cc-4d4b-9653-ddc13a53ca31"
+	}
+}
