@@ -103,7 +103,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "SELECT * FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{activity('last_change_data_capture_CDC').output.value[0].cdc}'",
+										"value": "SELECT * FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{activity('last_change_data_capture_CDC').output.value[0].ingestion_cdc}'",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
