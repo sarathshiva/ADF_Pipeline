@@ -13,9 +13,13 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"method": "GET",
-					"url": "https://pokeapi.co/api/v2/pokemon/"
+					"url": {
+						"value": "https://pokeapi.co/api/v2/pokemon/",
+						"type": "Expression"
+					}
 				}
 			}
 		],
