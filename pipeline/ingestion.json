@@ -61,7 +61,7 @@
 						{
 							"type": "Query",
 							"text": {
-								"value": "SELECT count(*) AS TOTAL_COUNT FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{activity('last_change_data_capture_CDC').output.value[0].ingestion_cdc}'",
+								"value": "SELECT count(*) AS TOTAL_COUNT FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{if(empty(pipeline().parameters.backdate),activity('last_change_data_capture_CDC').output.value[0].ingestion_cdc,pipeline().parameters.backdate)}'",
 								"type": "Expression"
 							}
 						}
@@ -103,7 +103,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "SELECT * FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{activity('last_change_data_capture_CDC').output.value[0].ingestion_cdc}'",
+										"value": "SELECT * FROM @{pipeline().parameters.schema}.@{pipeline().parameters.table} WHERE last_updated > '@{if(empty(pipeline().parameters.backdate),activity('last_change_data_capture_CDC').output.value[0].ingestion_cdc,pipeline().parameters.backdate)}'",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
@@ -253,6 +253,9 @@
 			"table": {
 				"type": "string",
 				"defaultValue": "orders"
+			},
+			"backdate": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
