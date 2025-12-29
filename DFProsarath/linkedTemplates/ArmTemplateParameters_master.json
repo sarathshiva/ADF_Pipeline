@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DFProsarath"
+		},
+		"ls_database_password": {
+			"value": ""
+		},
+		"ls_datalake_accountKey": {
+			"value": ""
+		},
+		"ls_REST_properties_typeProperties_url": {
+			"value": "https://pokeapi.co/api/v2/pokemon/"
+		},
+		"ls_database_properties_typeProperties_server": {
+			"value": "dfproserversarath.database.windows.net"
+		},
+		"ls_database_properties_typeProperties_database": {
+			"value": "dfproddbb"
+		},
+		"ls_database_properties_typeProperties_userName": {
+			"value": "sarathadmin"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://datafacprodtorage.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
