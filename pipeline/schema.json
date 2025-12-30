@@ -40,13 +40,6 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": ""
-								}
-							}
-						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": false,
@@ -61,7 +54,7 @@
 						"parameters": {
 							"p_container": "source",
 							"p_folder": "files",
-							"p_files": "customers.csv"
+							"p_files": "drivers.csv"
 						}
 					}
 				],
@@ -72,7 +65,7 @@
 						"parameters": {
 							"p_container": "sink",
 							"p_folder": "schema",
-							"p_files": "customers.csv"
+							"p_files": "drivers.csv"
 						}
 					}
 				]
