@@ -21,7 +21,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": "sink"
+				"folderPath": "files",
+				"fileSystem": "source"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -30,175 +31,35 @@
 		},
 		"schema": [
 			{
-				"name": "{\"count\":1350",
+				"name": "customer_id",
 				"type": "String"
 			},
 			{
-				"name": "\"next\":\"https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20\"",
+				"name": "first_name",
 				"type": "String"
 			},
 			{
-				"name": "\"previous\":null",
+				"name": "last_name",
 				"type": "String"
 			},
 			{
-				"name": "\"results\":[{\"name\":\"bulbasaur\"",
+				"name": "email",
 				"type": "String"
 			},
 			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/1/\"}",
+				"name": "phone_number",
 				"type": "String"
 			},
 			{
-				"name": "{\"name\":\"ivysaur\"",
+				"name": "city",
 				"type": "String"
 			},
 			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/2/\"}",
+				"name": "signup_date",
 				"type": "String"
 			},
 			{
-				"name": "{\"name\":\"venusaur\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/3/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"charmander\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/4/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"charmeleon\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/5/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"charizard\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/6/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"squirtle\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/7/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"wartortle\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/8/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"blastoise\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/9/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"caterpie\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/10/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"metapod\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/11/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"butterfree\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/12/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"weedle\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/13/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"kakuna\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/14/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"beedrill\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/15/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"pidgey\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/16/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"pidgeotto\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/17/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"pidgeot\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/18/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"rattata\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/19/\"}",
-				"type": "String"
-			},
-			{
-				"name": "{\"name\":\"raticate\"",
-				"type": "String"
-			},
-			{
-				"name": "\"url\":\"https://pokeapi.co/api/v2/pokemon/20/\"}]}",
+				"name": "last_updated_timestamp",
 				"type": "String"
 			}
 		]
